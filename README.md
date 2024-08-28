@@ -1,6 +1,6 @@
 # Prime-Wheels
 Pagina HTML: index
 CSS: Style
-Java: Java
+Java: Script
 Container: Container
 Imagens: IMG
