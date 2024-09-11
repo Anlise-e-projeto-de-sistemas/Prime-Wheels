@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/*começo edição do cabeçalho*/
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  height: 60px;
+}
+
+.logo{
+ /*margin-top: ; colocar a distancia do topo para manter o logo no meio*/
+  float: left;
+  width: 150px; /* Defina o tamanho do logo */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+nav ul {
+  list-style: none; /* Remove os marcadores de lista */
+  display: flex; /* Ativa o Flexbox */
+  justify-content: space-around; /* Distribui os itens com espaço entre eles */
+  align-items: center; /* Centraliza os itens verticalmente */
+  height: 40px; /* Define uma altura para visualização vertical */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #FFD700;
+}
+
+nav li {
+  font-size: 20px;
+  transition: transform 0.3s ease; /* Transição suave */
+}
+nav li:hover {
+  color: #FFD700;
+  transform: scale(1.2); /* Aumenta o texto em 20% */
+}
+
+.form-section {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+/*fim edição do cabeçalho*/
+
+/*local, data e hora de retirada*/
+button {
+  background-color: #fff;
+  border: 2px solid #FFD700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para o contêiner do carrossel */
+.carrossel-container {
+  position: relative;
+  width: 99vw; /* Largura da tela  */
+  height: 50vh; /* Altura da tela */
+  overflow: hidden;
+}
+
+/* Estilo para as imagens do carrossel */
+.carrossel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Garantir que o carrossel imagens ocupe toda a largura do contêiner */
+}
+
+/* Estilo para as imagens individuais */
+.carrossel-images img {
+  width: 99vw; /* Cada imagem ocupará a largura total da tela */
+  height: 50vh; /* Cada imagem ocupará a altura total da tela */
+  object-fit: cover; /* Mantém a proporção da imagem e cobre toda a área disponível */
+}
+
+/* Estilo para os botões de navegação */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: #090909;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 50px;
+}
+
+/*determina posição do botão esquerdo do carrossel*/
+.prev-btn {
+  left: 10px;
+}
+
+/*determina posição do botão direito do carrossel*/
+.next-btn {
+  right: 10px;
+}
+
+.car-types {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.car-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.car-item {
+  width: 200px;
+  background-color: #fff;
+  border: 2px solid #FFD700;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*Inicio botão ZAP*/
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px; /* Botão do WhatsApp à esquerda */
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+}
+/*Fim botão ZAP*/
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container para o conteúdo do rodapé */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Seções individuais do rodapé */
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h4 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-section p, .footer-section ul {
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Estilo para a parte inferior do rodapé */
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
