@@ -6,6 +6,7 @@
     <title>Prime Wheels</title>
     <link rel="stylesheet" href="css/Style.css">
     <script src="https://kit.fontawesome.com/0fd44e5d48.js" crossorigin="anonymous"></script>
+    <script src="https://fontawesome.com/icons/engine?f=classic&s=regular"></script>
 </head>
 <body>
     <!-- Cabeçalho com logo e navegação -->
@@ -38,12 +39,12 @@
     <div class="form-section">
         <div class="item">
             <select id="local">
-              <option value="local1">Selecione a garagem de retirada</option>
+                <option value="">Selecione a garagem de retirada</option>
                 <option value="local2">Aeroporto de Congonhas</option>
-              <option value="local3">Aeroporto Internacional de Guarulhos</option>
-              <option value="local4"> Alphaville</option>
-            <option value="local5">Avenida Paulista</option>
-         </select>
+                <option value="local3">Aeroporto Internacional de Guarulhos</option>
+                <option value="local4"> Alphaville</option>
+                <option value="local5">Avenida Paulista</option>
+            </select>
         </div>
         <div class="item">
           <input type="date" id="data">
@@ -52,6 +53,26 @@
             <input type="time" id="hora">
         </div>   
     </div>
+    <div class="form-section2">
+        <div class="item2">
+            <select id="local2">
+                <option value="">Selecione a garagem de devolução</option>
+                <option value="local2">Aeroporto de Congonhas</option>
+                <option value="local3">Aeroporto Internacional de Guarulhos</option>
+                <option value="local4"> Alphaville</option>
+                <option value="local5">Avenida Paulista</option>
+            </select>
+        </div>
+        <div class="item2">
+            <input type="date" id="data">
+        </div>
+        <div class="item2">
+            <input type="time" id="hora">
+        </div>   
+    </div>
+    <a href="CarrosDisponiveis.html"><div class="item3">
+        <button id="submitBtn">Enviar</button>
+    </div></a>
 
     <!-- Modal (Janela) para Login e Cadastro -->
     <div id="modal" class="modal">
@@ -118,39 +139,58 @@
         <!-- Carrossel de imagens -->
         <div class="carrossel-container">
             <div class="carrossel-images">
-                <img src="img/car1.png" alt="Carro 1">
-                <img src="img/car2.png" alt="Carro 2">
+                <img src="img/car3.png" alt="Carro 1">
+                <img src="img/car3.png" alt="Carro 2">
                 <img src="img/car3.png" alt="Carro 3">
-                <img src="img/car4.png" alt="Carro 4">
-                <img src="img/car5.png" alt="Carro 5">
+                <img src="img/car3.png" alt="Carro 4">
+                <img src="img/car3.png" alt="Carro 5">
             </div>
             <button class="prev-btn"><</button>
             <button class="next-btn">></button>
         </div>
 
         <!-- Seção todos os carros -->
+        <h2>Alguns dos nossos melhores veiculos</h2>
         <div class="car-list">
-            <div class="car-item">
-                <div class="car-photo">FOTO DO CARRO</div>
-                <div class="car-info">
-                    <p>Tipo de Carro</p>
-                    <p>Breve descrição</p>
+            <a href="Carros.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/carros1.png" alt="#" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">HONDA S2000</p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2020</p>
+                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">240</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">2</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">152.469,00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="car-item">
-                <div class="car-photo">FOTO DO CARRO</div>
-                <div class="car-info">
-                    <p>Tipo de Carro</p>
-                    <p>Breve descrição</p>
+            </a>
+            <a href="Carros.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/carros2.png" alt="#" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">Count Muscula</p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2022</p>
+                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">190</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">2</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">120.357,00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="car-item">
-                <div class="car-photo">FOTO DO CARRO</div>
-                <div class="car-info">
-                    <p>Tipo de Carro</p>
-                    <p>Breve descrição</p>
+            </a>
+            <a href="Carros.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/carros3.png" alt="#" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">Jack Hammer</p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2005</p>
+                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">200</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">2</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">98.357,00</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
