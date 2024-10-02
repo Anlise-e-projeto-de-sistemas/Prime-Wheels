@@ -1,3 +1,4 @@
+/*Inicio conf geral*/
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +6,21 @@
 }
 body {
   font-family:Arial, Helvetica, sans-serif; /*ADICIONAR A FONTE CORRETA*/
-  background-color: rgb(205, 232, 253);
+  background-color: #CDE8FD;
 }
 .fundo {
   margin: 0;
   height: 60px;
   width: 100%;
 }
+a{
+  text-decoration: none;
+}
+/*Fim conf geral*/
+
+
+
+/*Inicio cabeçalho*/
 .logo{
  /*margin-top: ; colocar a distancia do topo para manter o logo no meio*/
   float: left;
@@ -55,6 +64,8 @@ nav li:hover {
   color: #ff8418;
   transform: scale(1.2); /* Aumenta o texto em 20% */
 }
+
+/*Inicio retirada*/
 .form-section {
   font-weight: bold;
   display: flex;
@@ -62,7 +73,7 @@ nav li:hover {
   border-radius: 10px;
   padding: 15px;
   width: 1040px;
-  margin: -100px 0 0 405px;
+  margin: -160px 0 145px 405px;
 }
 .form-section:hover {
   cursor: pointer;
@@ -72,7 +83,7 @@ nav li:hover {
 .item {
   background-color: rgba(255, 255, 255, 0.522);
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,10 +110,100 @@ nav li:hover {
 }
 #local{
   padding-left: 60px;
+  cursor: pointer;
 }
 .item input[type="date"], .item input[type="time"] {
   padding-left: 50px;
+  cursor: pointer;
 }
+/*Fim retirada*/
+
+
+.form-section2, .item3 {
+  display: none; /* Oculta os elementos inicialmente */
+  transition: all 0.3s ease-in-out;
+}
+
+/*Inicio devolução*/
+.form-section2 {
+  font-weight: bold;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px;
+  width: 1040px;
+  margin: -170px 0 97px 405px;
+}
+.form-section2:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #ff8418;
+}
+.item2 {
+  background-color: rgba(255, 255, 255, 0.522);
+  border-radius: 5px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  flex-grow: 1;
+  position: relative;
+}
+.item2:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #ff8418;
+}
+.item2 label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.item2 select, .item2 input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+#local2{
+  padding-left: 60px;
+  cursor: pointer;
+}
+.item2 input[type="date"], .item2 input[type="time"] {
+  padding-left: 50px;
+  cursor: pointer;
+}
+/*Fim devolução*/
+
+/*Incio enviar*/
+.item3 {
+  background-color: rgba(255, 255, 255, 0.522);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
+  width: 90px;
+  height: 40px;
+  margin: -107px 0 67px 1330px;
+}
+#submitBtn {
+  width: 90px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.522);
+  color: rgb(9, 9, 9);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#submitBtn:hover {
+  background-color: #ff8418;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+/*Fim enviar*/
 /* Fim edição do cabeçalho */
 
 
@@ -269,8 +370,8 @@ form button:hover {
 }
 /* Estilo para as imagens individuais */
 .carrossel-images img {
-  width: 20vw; /* Cada imagem ocupará a largura da tela */
-  height: 40vh; /* Cada imagem ocupará a altura da tela */
+  width:400px; /* Cada imagem ocupará a largura da tela */
+  height: 500px; /* Cada imagem ocupará a altura da tela */
   padding: 50px;
 }
 /* Estilo para os botões de navegação */
@@ -305,17 +406,53 @@ form button:hover {
   color: #000000;
 }
 .car-list {
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 .car-item {
-  width: 200px;
-  background-color: #fff;
-  border: 2px solid #ff8418;
+  width: 377px;
+  background-color: rgb(255, 255, 255);
   margin: 10px;
+  border-radius: 20px;
+}
+.car-list :hover{
+  cursor: pointer;
+}
+.car-photo{
+  border-radius: 20px 20px 0 0 ;
+  width: 377px;
+}
+.car-info{
+  text-align: left;
   padding: 10px;
-  text-align: center;
+  color: #1c1919;
+}
+.car-info-nome{
+  color: #ff8418;
+  font-weight: bold; 
+}
+.car-emoji{
+  display: inline-block; 
+  margin-right: 5px;
+  color: #ff8418;
+}
+.car-info-ano-cavalo-pessoas{
+  display: inline-block; 
+  margin: 20px 10px 10px 0;
+}
+.car-info-valor{
+  display: inline-block; 
+  
+}
+hr{
+  border: none;
+  border-top: 1px solid #1c1919; /* Define uma linha com espessura e cor */
+  margin: 5px 0 15px 0; /* Espaçamento acima e abaixo da linha */
+}
+.car-links{
+  text-decoration: none; 
 }
 /* Fim carros por tipo */
 
