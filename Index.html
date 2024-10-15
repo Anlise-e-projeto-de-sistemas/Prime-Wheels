@@ -19,7 +19,7 @@
                     <a href="Index.html"><img src="img/logoofc.png" class="logo" alt="Logo"></a>
                     <li><a href="Carros.html"> <i class="fa-solid fa-car"></i> Carros </a></li>
                     <li><a href="Aquaticos.html"> <i class="fa-solid fa-sailboat"></i> Aquáticos </a></li>
-                    <li ><a href="Aereo.html"> <i class="fa-solid fa-helicopter"></i> Aéreos </a></li>
+                    <li ><a href="Aereos.html"> <i class="fa-solid fa-helicopter"></i> Aéreos </a></li>
                     <li><a href="MinhasReservas.html"> <i class="fa-solid fa-clipboard-list"></i> Minhas Reservas </a></li>
                     <div class="avatar-container"><li class="login"><i class="fa-solid fa-user fa-xl" alt="Login" id="openModal"></i></li></div>
                 </ul>
@@ -87,9 +87,9 @@
 
             <!-- Formulário de Login -->
             <div id="Login" class="tabcontent">
-                <h2>Login</h2>
+                <h2 id="h2Login">Login</h2>
                 <form id="loginForm">
-                    <label for="loginEmail">Email:</label>
+                    <label for="loginEmail">E-mail:</label>
                     <input type="email" id="loginEmail" name="loginEmail" required><br>
                     
                     <label for="loginPassword">Senha:</label>
@@ -105,9 +105,9 @@
 
             <!-- Formulário de Cadastro -->
             <div id="Cadastro" class="tabcontent">
-                <h2>Cadastro</h2>
+                <h2 id="h2Cadastro">Cadastro</h2>
                 <form id="cadastroForm">
-                    <label for="cadastroEmail">Email:</label>
+                    <label for="cadastroEmail">E-mail:</label>
                     <input type="email" id="cadastroEmail" name="cadastroEmail" required><br>
                     
                     <label for="cadastroPassword">Senha:</label>
@@ -134,27 +134,48 @@
 
     <!-- Seção de carros por tipo -->
     <section class="car-types">
-        <h2>Encontre seu veículo por marca</h2>
+        <h2>Encontre seu veiculo por marca</h2>
 
         <!-- Carrossel de imagens -->
         <div class="carrossel-container">
-            <div class="carrossel-images">
-                <img src="img/car3.png" alt="Carro 1">
-                <img src="img/car3.png" alt="Carro 2">
-                <img src="img/car3.png" alt="Carro 3">
-                <img src="img/car3.png" alt="Carro 4">
-                <img src="img/car3.png" alt="Carro 5">
+            <button class="prev-btn">&#10094;</button>
+            <div class="carrossel-wrapper">
+                <div class="carrossel-track">
+                    <div class="carrossel-images">
+                        <img src="img/car1.png" alt="Carro 1">
+                        <img src="img/car2.png" alt="Carro 2">
+                        <img src="img/car3.png" alt="Carro 3">
+                        <img src="img/car4.png" alt="Carro 4">
+                    </div>
+                    <div class="carrossel-images">
+                        <img src="img/car5.png" alt="Carro 5">
+                        <img src="img/car6.png" alt="Carro 6">
+                        <img src="img/car7.png" alt="Carro 7">
+                        <img src="img/car8.png" alt="Carro 8">
+                    </div>
+                    <div class="carrossel-images">
+                        <img src="img/car9.png" alt="Carro 9">
+                        <img src="img/car10.png" alt="Carro 10">
+                        <img src="img/car11.png" alt="Carro 11">
+                        <img src="img/car12.png" alt="Carro 12">
+                    </div>
+                </div>
             </div>
-            <button class="prev-btn"><</button>
-            <button class="next-btn">></button>
+            <button class="next-btn">&#10095;</button>
+            <!-- Indicadores de página (Círculos) -->
+            <div class="carrossel-pagination">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
 
         <!-- Seção todos os carros -->
-        <h2>Alguns dos nossos melhores veiculos</h2>
+        <div id="PMarca"><h2>Alguns dos nossos melhores veiculos</h2></div>
         <div class="car-list">
             <a href="Carros.html" class="car-links">
                 <div class="car-item">
-                    <img src="img/carros1.png" alt="#" class="car-photo">
+                    <img src="img/carros1.png" alt="Carro 1" class="car-photo">
                     <div class="car-info">
                         <p class="car-info-nome">HONDA S2000</p>
                         <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2020</p>
@@ -167,11 +188,11 @@
             </a>
             <a href="Carros.html" class="car-links">
                 <div class="car-item">
-                    <img src="img/carros2.png" alt="#" class="car-photo">
+                    <img src="img/carros2.png" alt="Carro 2" class="car-photo">
                     <div class="car-info">
                         <p class="car-info-nome">Count Muscula</p>
                         <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2022</p>
-                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">190</p>
+                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">650</p>
                         <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">2</p>
                         <hr>
                         <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">120.357,00</p>
@@ -180,14 +201,100 @@
             </a>
             <a href="Carros.html" class="car-links">
                 <div class="car-item">
-                    <img src="img/carros3.png" alt="#" class="car-photo">
+                    <img src="img/carros3.png" alt="Carro 3" class="car-photo">
                     <div class="car-info">
                         <p class="car-info-nome">Jack Hammer</p>
                         <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2005</p>
-                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">200</p>
-                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">2</p>
+                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">190</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">5</p>
                         <hr>
                         <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">98.357,00</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- BARCOS -->
+        <div class="car-list">
+            <a href="Aquaticos.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/barcos1.png" alt="Barco 1" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">Kapal Ferry H2GO Putih</p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2025</p>
+                        <div class="car-emoji"><i class="fa-solid fa-shoe-prints"></i></div><p class="car-info-ano-cavalo-pessoas">430hp</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">2</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">33.357,00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Aquaticos.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/barcos2.png" alt="Barco 2" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">Sea-Doos GTR</p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2024</p>
+                        <div class="car-emoji"><i class="fa-solid fa-shoe-prints"></i></div><p class="car-info-ano-cavalo-pessoas">325hp</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">2</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">3.357,00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Aquaticos.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/barcos3.png" alt="Barco 3" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">Jack Hammer</p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2019</p>
+                        <div class="car-emoji"><i class="fa-solid fa-shoe-prints"></i></div><p class="car-info-ano-cavalo-pessoas">249hp</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">12</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">17.357,00</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- AVIAO -->
+        <div class="car-list">
+            <a href="Aereos.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/aviao1.png" alt="Aviao 1" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">Matchbox - Sky Busters </p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2020</p>
+                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">1K</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">7</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">12.504,00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Aereos.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/aviao2.png" alt="Aviao 2" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">Mad Propz</p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2023</p>
+                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">165K</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">1</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">20.986,00</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Aereos.html" class="car-links">
+                <div class="car-item">
+                    <img src="img/aviao3.png" alt="Aviao 3" class="car-photo">
+                    <div class="car-info">
+                        <p class="car-info-nome">Poison Arrow GRY98</p>
+                        <div class="car-emoji"><i class="fa-solid fa-calendar"></i></div><p class="car-info-ano-cavalo-pessoas">2021</p>
+                        <div class="car-emoji"><i class="fa-solid fa-horse-head"></i></div><p class="car-info-ano-cavalo-pessoas">216K</p>
+                        <div class="car-emoji"><i class="fa-duotone fa-solid fa-users"></i></div><p class="car-info-ano-cavalo-pessoas">2</p>
+                        <hr>
+                        <div class="car-emoji"><i class="fa-solid fa-brazilian-real-sign"></i></div><p class="car-info-valor">52.634,00</p>
                     </div>
                 </div>
             </a>
