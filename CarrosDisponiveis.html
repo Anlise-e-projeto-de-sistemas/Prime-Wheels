@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Wheels - Carros Disponiveis</title>
+    <link rel="stylesheet" href="css/Carros.css">
+    <script src="https://kit.fontawesome.com/0fd44e5d48.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+        <div>
+            <!-- Fundo do cabeçalho-->
+            <img src="img/fundo.png" alt="imagem de fundo" class="fundo">
+            <nav>
+                <ul>
+                    <a href="Index.html"><img src="img/logoofc.png" class="logo" alt="Logo"></a>
+                    <li><a href="Carros.html"> <i class="fa-solid fa-car"></i> Carros </a></li>
+                    <li><a href="Aquaticos.html"> <i class="fa-solid fa-sailboat"></i> Aquáticos </a></li>
+                    <li ><a href="Aereos.html"> <i class="fa-solid fa-helicopter"></i> Aéreos </a></li>
+                    <li><a href="MinhasReservas.html"> <i class="fa-solid fa-clipboard-list"></i> Minhas Reservas </a></li>
+                    <div class="avatar-container"><li class="login"><i class="fa-solid fa-user fa-xl" alt="Login" id="openModal"></i></li></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Modal (Janela) para Login e Cadastro -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            
+            <!-- Tabs para alternar entre Login e Cadastro -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Login')" id="defaultTab">Login</button>
+                <button class="tablinks" onclick="openTab(event, 'Cadastro')">Cadastro</button>
+            </div>
+
+            <!-- Formulário de Login -->
+            <div id="Login" class="tabcontent">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required><br>
+                    
+                    <label for="loginPassword">Senha:</label>
+                    <div class="password-container">
+                        <input type="password" id="loginPassword" name="loginPassword" required>
+                        <span class="toggle-password" onclick="togglePassword('loginPassword', 'toggleLoginIcon')">
+                            <img src="img/eye-closed.svg" id="toggleLoginIcon" alt="Toggle Senha">
+                        </span>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <!-- Formulário de Cadastro -->
+            <div id="Cadastro" class="tabcontent">
+                <h2>Cadastro</h2>
+                <form id="cadastroForm">
+                    <label for="cadastroEmail">Email:</label>
+                    <input type="email" id="cadastroEmail" name="cadastroEmail" required><br>
+                    
+                    <label for="cadastroPassword">Senha:</label>
+                    <div class="password-container">
+                        <input type="password" id="cadastroPassword" name="cadastroPassword" required>
+                        <span class="toggle-password" onclick="togglePassword('cadastroPassword', 'toggleCadastroIcon')">
+                            <img src="img/eye-closed.svg" id="toggleCadastroIcon" alt="Toggle Senha">
+                        </span>
+                    </div>
+
+                    <label for="cadastroConfirmPassword">Confirmar Senha:</label>
+                    <div class="password-container">
+                        <input type="password" id="cadastroConfirmPassword" name="cadastroConfirmPassword" required>
+                        <span class="toggle-password" onclick="togglePassword('cadastroConfirmPassword', 'toggleConfirmIcon')">
+                            <img src="img/eye-closed.svg" id="toggleConfirmIcon" alt="Toggle Senha">
+                        </span>
+                    </div>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<!-- ADICIONE O CONTEUDO DESTA PAGINA AQUI -->
+<div class="conteudo">
+    Os carros disponiveis para está data são:
+</div>
+
+
+
+
+
+
+    <!-- Botão do WhatsApp fixo na tela -->
+    <a href="https://wa.me/5511943063639" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp fa-3x"></i>
+    </a>
+
+    <!-- Botão topo fixo no rodapé-->
+    <button id="btnTopo" class="btn-topo" onclick="scrollToTop()">
+        <i class="fa-solid fa-up-long"></i>
+    </button>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div>
+            <!-- Fundo do cabeçalho-->
+            <img src="img/fundo 2.png" alt="imagem de fundo" class="fundo2">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Sobre Nós</h4>
+                    <p>A Jornada da Prime Wheels é a realização do sonho de três amigos...</p>
+                    <div class="espaco"></div>
+                    <a href="SobreNos.html" class="saiba">Saiba mais !</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="Privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="MinhasReservas.html">Minhas Reservas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: PrimeWheels@empresa.com.br</p>
+                    <p class="telefone">Telefone: (11) 1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                    <a href="https://www.tiktok.com/" class="social-icon"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+                    <a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Prime Wheels. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="java/Script.js"></script>
+</body>
+</html>

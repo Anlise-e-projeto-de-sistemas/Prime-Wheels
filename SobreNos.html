@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="css/SobreNos.css">
+    <script src="https://kit.fontawesome.com/0fd44e5d48.js" crossorigin="anonymous"></script>
+    <script src="https://fontawesome.com/icons/engine?f=classic&s=regular"></script>
+</head>
+<body>
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+        <div>
+            <!-- Fundo do cabeçalho-->
+            <img src="img/fundo.png" alt="imagem de fundo" class="fundo">
+            <nav>
+                <ul>
+                    <a href="Index.html"><img src="img/logoofc.png" class="logo" alt="Logo"></a>
+                    <li><a href="Carros.html"> <i class="fa-solid fa-car"></i> Carros </a></li>
+                    <li><a href="Aquaticos.html"> <i class="fa-solid fa-sailboat"></i> Aquáticos </a></li>
+                    <li ><a href="Aereos.html"> <i class="fa-solid fa-helicopter"></i> Aéreos </a></li>
+                    <li><a href="MinhasReservas.html"> <i class="fa-solid fa-clipboard-list"></i> Minhas Reservas </a></li>
+                    <div class="avatar-container"><li class="login"><i class="fa-solid fa-user fa-xl" alt="Login" id="openModal"></i></li></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Modal (Janela) para Login e Cadastro -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            
+            <!-- Tabs para alternar entre Login e Cadastro -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Login')" id="defaultTab">Login</button>
+                <button class="tablinks" onclick="openTab(event, 'Cadastro')">Cadastro</button>
+            </div>
+
+            <!-- Formulário de Login -->
+            <div id="Login" class="tabcontent">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required><br>
+                    
+                    <label for="loginPassword">Senha:</label>
+                    <div class="password-container">
+                        <input type="password" id="loginPassword" name="loginPassword" required>
+                        <span class="toggle-password" onclick="togglePassword('loginPassword', 'toggleLoginIcon')">
+                            <img src="img/eye-closed.svg" id="toggleLoginIcon" alt="Toggle Senha">
+                        </span>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <!-- Formulário de Cadastro -->
+            <div id="Cadastro" class="tabcontent">
+                <h2>Cadastro</h2>
+                <form id="cadastroForm">
+                    <label for="cadastroEmail">Email:</label>
+                    <input type="email" id="cadastroEmail" name="cadastroEmail" required><br>
+                    
+                    <label for="cadastroPassword">Senha:</label>
+                    <div class="password-container">
+                        <input type="password" id="cadastroPassword" name="cadastroPassword" required>
+                        <span class="toggle-password" onclick="togglePassword('cadastroPassword', 'toggleCadastroIcon')">
+                            <img src="img/eye-closed.svg" id="toggleCadastroIcon" alt="Toggle Senha">
+                        </span>
+                    </div>
+
+                    <label for="cadastroConfirmPassword">Confirmar Senha:</label>
+                    <div class="password-container">
+                        <input type="password" id="cadastroConfirmPassword" name="cadastroConfirmPassword" required>
+                        <span class="toggle-password" onclick="togglePassword('cadastroConfirmPassword', 'toggleConfirmIcon')">
+                            <img src="img/eye-closed.svg" id="toggleConfirmIcon" alt="Toggle Senha">
+                        </span>
+                    </div>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Inicio Video -->
+    <div class="conteudo">
+        <video autoplay muted loop class="video-bg">
+            <source src="img/VideoSN.MP4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <!-- Inicio Texto -->
+        <div class="txt">
+            <h3>Jornada da Prime Wheels: </h3><p>A Realização do Sonho de Três Amigos</p>
+            <p>Era uma tarde de verão em São Paulo quando três amigos de longa data se encontraram em um café local, compartilhando histórias e sonhos. Felipe, um apaixonado por carros esportivos; Julia, uma expert em negócios e marketing; e Giovanna, uma visionária com um profundo entendimento das necessidades dos clientes, tinham algo em comum: a paixão por veículos de luxo e a crença de que o mercado brasileiro estava sedento por algo novo e exclusivo no ramo da locação.</p>
+            <p>Depois de várias conversas e horas planejando, decidiram unir suas forças e conhecimentos para criar uma empresa que não apenas oferecesse carros, mas proporcionasse uma experiência única e memorável. Assim nasceu a Prime Wheels, com a missão de transformar o mercado de locação de veículos de luxo no Brasil.</p>
+            <p>O nome "Prime Wheels" foi escolhido para refletir o compromisso da empresa com a excelência e a qualidade superior. Com uma visão clara e uma estratégia bem definida, os três amigos começaram a construir o que se tornaria uma referência no setor.</p>
+            <p>A Prime Wheels destacou-se rapidamente pela sua frota exclusiva, composta por automóveis esportivos, exóticos, SUVs e veículos de luxo. Cada carro foi selecionado com rigor, garantindo que apenas os melhores e mais sofisticados modelos estivessem disponíveis para seus clientes. O compromisso com a qualidade e a atenção aos detalhes era evidente em cada aspecto da empresa, desde a escolha dos veículos até o atendimento ao cliente.</p>
+            <p>O serviço oferecido pela Prime Wheels é mais do que uma simples locação; É uma experiência personalizada e memorável! Julia, com sua expertise em marketing, desenvolveu uma abordagem única para a promoção da empresa, enquanto Giovanna implementou um atendimento ao cliente impecável, assegurando que cada cliente fosse tratado com a máxima consideração e respeito.</p>
+            <p>Com o passar do tempo, a Prime Wheels consolidou sua posição como líder no mercado de locação de veículos de luxo. A empresa ficou conhecida não apenas pela excelência de sua frota, mas também pela flexibilidade das opções de locação e pelo serviço excepcional que superava as expectativas.</p>
+            <p>Felipe, Julia e Giovanna continuaram a inovar, sempre buscando maneiras de melhorar e expandir a oferta da Prime Wheels. Eles mantiveram o compromisso inabalável com a qualidade, valor e satisfação, solidificando a reputação da empresa como a escolha definitiva para aqueles que desejavam uma experiência automobilística de luxo no Brasil.</p>
+            <p>Hoje, a Prime Wheels é sinônimo de luxo e excelência no setor, uma verdadeira realização do sonho de três amigos que, unidos pela paixão e pela visão, transformaram o mercado de locação de veículos de luxo no Brasil.</p>
+        </div>
+    </div>
+
+    <!-- Inicio cards -->
+    <h2 class="Fundadores">Fundadores:</h2>
+    <div class="carrossel">
+        <div class="card" data-index="0">
+          <div class="card-front">
+            <img src="img/gi.jpeg" alt="Pessoa 1">
+            <h3>Gi</h3>
+          </div>
+          <div class="card-back">
+            <h3>Giovanna Rozante</h3>
+            <br><p>20 anos.</p>
+            <br><p>Especialista em UX/UI Design e entusiasta de design thinking.</p>
+            <br><p>Responsável pelo Front-end </p>
+          </div>
+        </div>
+
+        <div class="card" data-index="1">
+          <div class="card-front">
+            <img src="img/juliis.jfif" alt="Pessoa 2">
+            <h3>Juliis</h3>
+          </div>
+          <div class="card-back">
+            <h3>Julia Santos</h3>
+            <br><p>21 anos.</p>
+            <br><p>Desenvolvedora Full-Stack com 5 anos de experiência em JavaScript e Python.</p>
+            <br><p>Responsável pelo Back-end </p>
+          </div>
+        </div>
+
+        <div class="card" data-index="2">
+          <div class="card-front">
+            <img src="img/felipe.jpeg" alt="Pessoa 3">
+            <h3>Felipe</h3>
+          </div>
+          <div class="card-back">
+            <h3>Luis Felipe</h3>
+            <br><p>XX anos.</p>
+            <br><p>Gestor de Projetos com foco em metodologias ágeis e inovação.</p>
+            <br><p>Responsável pelo Banco de Dados </p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Botão do WhatsApp fixo na tela -->
+    <a href="https://wa.me/5511943063639" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp fa-3x"></i>
+    </a>
+
+    <!-- Botão topo fixo no rodapé-->
+    <button id="btnTopo" class="btn-topo" onclick="scrollToTop()">
+        <i class="fa-solid fa-up-long"></i>
+    </button>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div>
+            <!-- Fundo do cabeçalho-->
+            <img src="img/fundo 2.png" alt="imagem de fundo" class="fundo2">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="Privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="MinhasReservas.html">Minhas Reservas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: PrimeWheels@empresa.com.br</p>
+                    <p class="telefone">Telefone: (11) 1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                    <a href="https://www.tiktok.com/" class="social-icon"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+                    <a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Prime Wheels. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="java/Script.js"></script>
+</body>
+</html>
