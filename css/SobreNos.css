@@ -41,10 +41,18 @@ body {
 }
 a{
   text-decoration: none;
+  color: #ffffff;
 }
 h2, h3{
   font-family: SpeedTitulo;
   font-size: 40px;
+  color: #ff8418;
+}
+.GuiaPgs{
+  text-decoration:none;
+  font-size: 10px !important;
+}
+.GuiaPgs :hover{
   color: #ff8418;
 }
 /*Fim conf geral*/
