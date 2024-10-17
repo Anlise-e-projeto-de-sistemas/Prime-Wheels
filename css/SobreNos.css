@@ -275,7 +275,7 @@ nav li:hover {
   background-color: #000450;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  width: 500px;
   position: relative;
   margin: auto;
 }
@@ -288,14 +288,23 @@ nav li:hover {
   cursor: pointer;
   color: #fff;
 }
+
+
+#loginForm, #cadastroForm{
+  background-color: #000450;
+}
+
+
 /*Titulo de login e cadastro*/
 #Login h2{
   color: #fff;
   padding-bottom: 10px;
+  background-color: #000450;
 }
 #Cadastro h2{
   color: #fff;
   padding-bottom: 10px;
+  background-color: #000450;
 }
 /* Tabs para Login e Cadastro */
 .tab {
