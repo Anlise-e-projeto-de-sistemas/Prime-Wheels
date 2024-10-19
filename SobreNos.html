@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós</title>
+    <title>Prime Wheels - Sobre Nós</title>
     <link rel="stylesheet" href="css/SobreNos.css">
     <script src="https://kit.fontawesome.com/0fd44e5d48.js" crossorigin="anonymous"></script>
     <script src="https://fontawesome.com/icons/engine?f=classic&s=regular"></script>
@@ -92,19 +92,82 @@
             <source src="img/VideoSN.MP4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
+
         <!-- Inicio Texto -->
         <div class="txt">
-            <p class="GuiaPgs"><a href="Index.html" target="_blank" class="GuiaPgs">Home</a> > <a href="SobreNos.html" target="_blank" class="GuiaPgs">Sobre Nós</a></p>
+            <p class="GuiaPgs"><a href="Index.html" target="_blank" class="GuiaPgs">Home</a> > <a href="SobreNos.html" target="_blank" class="GuiaPgs">Sobre Nós & Política de Privacidade</a></p>
 
-            <h3>Jornada da Prime Wheels: </h3><p>A Realização do Sonho de Três Amigos</p>
-            <p>Era uma tarde de verão em São Paulo quando três amigos de longa data se encontraram em um café local, compartilhando histórias e sonhos. Felipe, um apaixonado por carros esportivos; Julia, uma expert em negócios e marketing; e Giovanna, uma visionária com um profundo entendimento das necessidades dos clientes, tinham algo em comum: a paixão por veículos de luxo e a crença de que o mercado brasileiro estava sedento por algo novo e exclusivo no ramo da locação.</p>
-            <p>Depois de várias conversas e horas planejando, decidiram unir suas forças e conhecimentos para criar uma empresa que não apenas oferecesse carros, mas proporcionasse uma experiência única e memorável. Assim nasceu a Prime Wheels, com a missão de transformar o mercado de locação de veículos de luxo no Brasil.</p>
-            <p>O nome "Prime Wheels" foi escolhido para refletir o compromisso da empresa com a excelência e a qualidade superior. Com uma visão clara e uma estratégia bem definida, os três amigos começaram a construir o que se tornaria uma referência no setor.</p>
-            <p>A Prime Wheels destacou-se rapidamente pela sua frota exclusiva, composta por automóveis esportivos, exóticos, SUVs e veículos de luxo. Cada carro foi selecionado com rigor, garantindo que apenas os melhores e mais sofisticados modelos estivessem disponíveis para seus clientes. O compromisso com a qualidade e a atenção aos detalhes era evidente em cada aspecto da empresa, desde a escolha dos veículos até o atendimento ao cliente.</p>
-            <p>O serviço oferecido pela Prime Wheels é mais do que uma simples locação; É uma experiência personalizada e memorável! Julia, com sua expertise em marketing, desenvolveu uma abordagem única para a promoção da empresa, enquanto Giovanna implementou um atendimento ao cliente impecável, assegurando que cada cliente fosse tratado com a máxima consideração e respeito.</p>
-            <p>Com o passar do tempo, a Prime Wheels consolidou sua posição como líder no mercado de locação de veículos de luxo. A empresa ficou conhecida não apenas pela excelência de sua frota, mas também pela flexibilidade das opções de locação e pelo serviço excepcional que superava as expectativas.</p>
-            <p>Felipe, Julia e Giovanna continuaram a inovar, sempre buscando maneiras de melhorar e expandir a oferta da Prime Wheels. Eles mantiveram o compromisso inabalável com a qualidade, valor e satisfação, solidificando a reputação da empresa como a escolha definitiva para aqueles que desejavam uma experiência automobilística de luxo no Brasil.</p>
-            <p>Hoje, a Prime Wheels é sinônimo de luxo e excelência no setor, uma verdadeira realização do sonho de três amigos que, unidos pela paixão e pela visão, transformaram o mercado de locação de veículos de luxo no Brasil.</p>
+            <!-- Tabs para alternar entre Sobre Nos e Política -->
+            <div class="buttons">
+                <button id="btnJornada">Jornada da Prime Wheels</button>
+                <button id="btnPolitica">Política de Privacidade</button>
+            </div>
+            <div id="jornada" class="content active">
+                <h3 id="loginForm2">Jornada da Prime Wheels: </h3><p>A Realização do Sonho de Três Amigos</p>
+                <p>Era uma tarde de verão em São Paulo quando três amigos de longa data se encontraram em um café local, compartilhando histórias e sonhos. Felipe, um apaixonado por carros esportivos; Julia, uma expert em negócios e marketing; e Giovanna, uma visionária com um profundo entendimento das necessidades dos clientes, tinham algo em comum: a paixão por veículos de luxo e a crença de que o mercado brasileiro estava sedento por algo novo e exclusivo no ramo da locação.</p>
+                <p>Depois de várias conversas e horas planejando, decidiram unir suas forças e conhecimentos para criar uma empresa que não apenas oferecesse carros, mas proporcionasse uma experiência única e memorável. Assim nasceu a Prime Wheels, com a missão de transformar o mercado de locação de veículos de luxo no Brasil.</p>
+                <p>O nome "Prime Wheels" foi escolhido para refletir o compromisso da empresa com a excelência e a qualidade superior. Com uma visão clara e uma estratégia bem definida, os três amigos começaram a construir o que se tornaria uma referência no setor.</p>
+                <p>A Prime Wheels destacou-se rapidamente pela sua frota exclusiva, composta por automóveis esportivos, exóticos, SUVs e veículos de luxo. Cada carro foi selecionado com rigor, garantindo que apenas os melhores e mais sofisticados modelos estivessem disponíveis para seus clientes. O compromisso com a qualidade e a atenção aos detalhes era evidente em cada aspecto da empresa, desde a escolha dos veículos até o atendimento ao cliente.</p>
+                <p>O serviço oferecido pela Prime Wheels é mais do que uma simples locação; É uma experiência personalizada e memorável! Julia, com sua expertise em marketing, desenvolveu uma abordagem única para a promoção da empresa, enquanto Giovanna implementou um atendimento ao cliente impecável, assegurando que cada cliente fosse tratado com a máxima consideração e respeito.</p>
+                <p>Com o passar do tempo, a Prime Wheels consolidou sua posição como líder no mercado de locação de veículos de luxo. A empresa ficou conhecida não apenas pela excelência de sua frota, mas também pela flexibilidade das opções de locação e pelo serviço excepcional que superava as expectativas.</p>
+                <p>Felipe, Julia e Giovanna continuaram a inovar, sempre buscando maneiras de melhorar e expandir a oferta da Prime Wheels. Eles mantiveram o compromisso inabalável com a qualidade, valor e satisfação, solidificando a reputação da empresa como a escolha definitiva para aqueles que desejavam uma experiência automobilística de luxo no Brasil.</p>
+                <p>Hoje, a Prime Wheels é sinônimo de luxo e excelência no setor, uma verdadeira realização do sonho de três amigos que, unidos pela paixão e pela visão, transformaram o mercado de locação de veículos de luxo no Brasil.</p>
+            </div>
+            <div id="politica" class="content">
+                <h3 id="loginForm2">Politica de Privacidade: </h3>
+                <p>Na Prime Wheels, a sua privacidade é uma prioridade. Este documento descreve como coletamos, usamos e protegemos suas informações.</p>
+                <br>
+                <div id="politica1">
+                    <h4>1. Coleta</h4>
+                    <p>Coletamos dados pessoais quando você:</p>
+                    <ul>
+                        <li>Faz uma reserva ou cadastro (nome, telefone, e-mail, endereço e CNH);</li>
+                        <li>Realiza pagamentos (informações financeiras e de cartão);</li>
+                        <li>Interage conosco por meio de nosso site ou redes sociais.</li>
+                    </ul>
+                    <br>
+                    <p>
+
+                    <h4>2. Uso</h4>
+                    <p>Usamos seus dados para:</p>
+                    <ul>
+                        <li>Processar e gerenciar reservas e locações;</li>
+                        <li>Entrar em contato sobre confirmações, suporte e promoções;</li>
+                        <li>Cumprir obrigações legais e garantir a segurança do serviço.</li>
+                    </ul>
+                    <br>
+
+                    <h4>3. Compartilhamento</h4>
+                    <p>Compartilhamos suas informações apenas quando necessário:</p>
+                    <ul>
+                        <li>Com parceiros de pagamento e seguradoras;</li>
+                        <li>Para cumprimento de exigências legais ou autoridades públicas;</li>
+                        <li>Não vendemos suas informações para terceiros.</li>
+                    </ul>
+                    <br>
+
+                    <h4>4. Cautela</h4>
+                    <p>Adotamos medidas técnicas e organizacionais para proteger suas informações contra acessos não autorizados, perdas e violações.</p>
+                    <br>
+
+                    <h4>5. Direitos</h4>
+                    <p>Você pode solicitar a atualização, correção ou exclusão dos seus dados a qualquer momento.</p>
+                    <p>Para isso, entre em contato pelo e-mail:          primewheels@empresa.com.</p>
+                    <br>
+
+                    <h4>6. Upgrade</h4>
+                    <p>Podemos atualizar esta política periodicamente. A versão mais recente estará sempre disponível em nosso site.</p>
+                    <br>
+
+                    <h4>7. Contato</h4>
+                    <p>Caso tenha dúvidas sobre nossa política de privacidade, entre em contato:</p>
+                    <p>E-mail: primewheels@empresa.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <br>
+
+                    <p>A Prime Wheels está comprometida em oferecer um serviço seguro e transparente para você!</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -171,8 +234,6 @@
                     <h4>Links Úteis</h4>
                     <ul>
                         <li><a href="Index.html">Home</a></li>
-                        <li><a href="Privacidade.html">Política de Privacidade</a></li>
-                        <li><a href="#">Cadastro</a></li>
                         <li><a href="MinhasReservas.html">Minhas Reservas</a></li>
                     </ul>
                 </div>
