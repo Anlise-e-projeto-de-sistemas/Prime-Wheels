@@ -55,6 +55,25 @@ function togglePassword(inputId, iconId) {
 
 
 
+/*Inicio botao topo*/
+// Função para rolar suavemente até o topo da página
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Mostrar o botão apenas quando o usuário rolar a página
+window.onscroll = function() {
+    const btnTopo = document.getElementById('btnTopo');
+    if (window.pageYOffset > 300) {
+        btnTopo.classList.add('show');  // Exibe o botão ao rolar mais de 300px
+    } else {
+        btnTopo.classList.remove('show');  // Esconde o botão ao voltar para o topo
+    }
+};
+/*Fim botao topo*/
+
+
+
 /*Inicio cards*/
 const cards = document.querySelectorAll('.card');
 const dots = document.querySelectorAll('.dot');
@@ -71,3 +90,22 @@ function goToCard(index) {
   updateCarrossel();
 }
 /*Fim cards*/
+
+/*Inicio alternar entre as abas de Sobre Nos e Política*/
+// Seleciona os elementos
+const btnJornada = document.getElementById('btnJornada');
+const btnPolitica = document.getElementById('btnPolitica');
+const jornadaSection = document.getElementById('jornada');
+const politicaSection = document.getElementById('politica');
+
+// Função para alternar entre seções
+btnJornada.addEventListener('click', () => {
+    jornadaSection.classList.add('active');
+    politicaSection.classList.remove('active');
+});
+
+btnPolitica.addEventListener('click', () => {
+    politicaSection.classList.add('active');
+    jornadaSection.classList.remove('active');
+});
+/*Fim alternar entre as abas de Sobre Nos e Política*/
