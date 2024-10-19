@@ -294,6 +294,10 @@ nav li:hover {
   background-color: #000450;
 }
 
+#loginForm2{
+  background-color: #001a63;
+}
+
 
 /*Titulo de login e cadastro*/
 #Login h2{
@@ -379,14 +383,46 @@ form button:hover {
 /* Estilo da div com o vídeo de fundo */
 .conteudo {
   position: relative; /* Permite sobreposição do texto sobre o vídeo */
-  height: 1200px;
+  height: 1300px;
   width: 100%; 
+  margin-top: 8px;
   overflow: hidden; /* Garante que nada saia dos limites da div */
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* Botões de navegação */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.buttons button {
+  width: 1200px;
+  height: 50px;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #001a63;
+  color: white;
+  transition: background-color 0.3s;
+}
+.buttons button:hover {
+  background-color: #ff8418;
+}
+/* Conteúdo escondido por padrão */
+.content {
+  display: none;
+}
+/* Conteúdo ativo */
+.content.active {
+  display: block;
+}
+
 /* Estilo para o vídeo de fundo */
 .video-bg {
   position: absolute;
@@ -399,14 +435,12 @@ form button:hover {
   z-index: -1; /* Coloca o vídeo atrás do conteúdo */
   
 }
-/* Estilo do texto */
+
 .txt {
-  margin-top: 15px;
   margin-right: 50%;
   width: 50%;
-  height: 1200px;
   position: relative; /* Para que o texto apareça acima do vídeo */
-  background-color: #001a63; /*Fundo semi-transparente para contraste */
+  background-color: #001a63 !important; /*Fundo semi-transparente para contraste */
   padding: 30px;
   text-align: left;
   padding-top: 50px;
@@ -414,6 +448,28 @@ form button:hover {
 .txt p {
   margin-bottom: 15px;
   line-height: 1.6;
+  margin-left: 50px;
+}
+#jornada, #politica{
+  background-color: #001a63;
+}
+#politica1{
+  margin-left: 50px;
+}
+li{
+  margin-left: 75px;
+}
+/* Lado esquerdo e direito */
+.left, .right {
+  width: 50%;
+  padding: 20px;
+}
+/* Lado esquerdo com botões e conteúdo */
+.left {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 /*Fim video/texto*/
 
